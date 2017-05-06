@@ -1,0 +1,21 @@
+page-shopping-list {
+
+  ion-item-sliding.edit ion-item{
+    background: #ccc;
+  }
+
+  ion-item h3 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    & span:first-child {
+      width: 70%;
+    }
+
+    & span:last-child {
+      width: 30%;
+    }
+  }
+
+}
