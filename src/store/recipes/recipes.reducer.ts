@@ -1,6 +1,5 @@
 import * as recipe from './recipes.actions';
-
-class Recipe {}
+import { Recipe } from './recipe.model';
 
 export interface RecipesState {
   recipes: Array<Recipe>,

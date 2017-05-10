@@ -1,17 +1,10 @@
 import { Action } from '@ngrx/store';
-import {ShoppingListItem} from "../../models/shopping-list-item";
+import { Recipe } from './recipe.model';
 
 export const ADD_RECIPE = 'ADD_RECIPE';
 export const DELETE_RECIPE = 'DELETE_RECIPE';
 export const UPDATE_RECIPE = 'UPDATE_RECIPE';
 export const SELECT_RECIPE = 'SELECT_RECIPE';
-
-export class Recipe {
-  constructor(public title: string,
-              public description: string,
-              public difficulty: string,
-              public ingredients: Array<ShoppingListItem> = []){}
-}
 
 export interface RecipeActionPayload {
   recipe?: Recipe

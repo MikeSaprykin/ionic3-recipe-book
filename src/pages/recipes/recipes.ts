@@ -25,7 +25,7 @@ export class Recipes {
      * TODO: This is added temporary while redux implementation is in progress
      * @type {"../../Observable".Observable<R>}
      */
-    this.recipes$ = this.store.select((state: State) => state.recipes.recipes);
+    this.recipes$ = this.store.select('recipes', 'recipes');
     const recipe = new Recipe('kappa', 'keppo', 'koppa', []);
     setTimeout(() => {
       this.store.dispatch(new AddRecipeAction({recipe: recipe}))
